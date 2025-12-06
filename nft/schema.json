@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Fish NFT Metadata",
+  "type": "object",
+  "required": ["name", "description", "image", "attributes"],
+  "properties": {
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "image": { "type": "string" },
+    "attributes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["trait_type", "value"],
+        "properties": {
+          "trait_type": { "type": "string" },
+          "value": {}
+        }
+      }
+    }
+  }
+}
